@@ -5,7 +5,7 @@ namespace ko{
         private:
         static const std::string baseString;
         public:
-        static std::string base64Encode(const std::string& s);
-        static std::string base64Decode(const std::string& s);
+        static std::string encode(const std::string& s);
+        static std::string decode(const std::string& s);
     };
 }
