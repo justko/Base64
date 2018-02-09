@@ -6,9 +6,9 @@
 #include<string>
 #include<iostream>
 int main(){
-    std::string s=ko::Base64::base64Encode("fuckhelloworld");
+    std::string s=ko::Base64::encode("fuckhelloworld");
     std::cout<<s<<std::endl;
-    std::string ori=ko::Base64::base64Decode(s);
+    std::string ori=ko::Base64::decode(s);
     std::cout<<ori<<std::endl;
     return 0;
 }
