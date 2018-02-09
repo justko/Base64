@@ -5,7 +5,7 @@ const std::string ko::Base64::baseString=
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     "abcdefghijklmnopqrstuvwxyz"
     "0123456789+/";
-std::string ko::Base64::base64Encode(const std::string &s){
+std::string ko::Base64::encode(const std::string &s){
     unsigned char array3[3];
     unsigned char array4[4];
     unsigned group=s.length()/3;
@@ -33,7 +33,7 @@ std::string ko::Base64::base64Encode(const std::string &s){
     }
     return ret;
 }
-std::string ko::Base64::base64Decode(const std::string& s){
+std::string ko::Base64::decode(const std::string& s){
     unsigned char array3[3];
     unsigned char array4[4];
     unsigned group=s.length()/4;
